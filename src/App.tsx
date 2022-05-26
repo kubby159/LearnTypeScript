@@ -1,19 +1,8 @@
-import React, { useState } from "react";
 import styled from "styled-components";
-import Circle from "./Circle";
+import Router from "./routes/Router";
 
-const Container = styled.div`
-  background-color: ${(props) => props.theme.bgColor};
-`;
-const H1 = styled.h1`
-  color: ${(props) => props.theme.textColor};
-`;
 function App() {
-  return (
-    <Container>
-      <H1>Hello</H1>
-    </Container>
-  );
+  return <Router></Router>;
 }
 
 export default App;
